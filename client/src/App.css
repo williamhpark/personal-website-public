@@ -1,0 +1,44 @@
+/* App.js */
+
+#app {
+  min-height: 100vh;
+  position: relative;
+}
+
+#app .page {
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+/* CSS Transitions */
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+/* Contact page */
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}

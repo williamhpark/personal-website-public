@@ -1,0 +1,18 @@
+.welcome-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-container #img-container {
+  margin-left: 5%;
+}
+
+.welcome-container #img-container #image {
+  border-radius: 50%;
+  width: 20vw;
+  height: auto;
+}
