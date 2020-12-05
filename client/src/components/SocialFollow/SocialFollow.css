@@ -1,6 +1,5 @@
 #social-container {
-  width: 100%;
-  margin-top: 10%;
+  margin: 4vh 0 2vh 0;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,18 @@
+#welcome-hero {
+  text-align: left;
+}
+
+#welcome-hero #greeting {
+  font-weight: lighter;
+  font-size: 3vw;
+}
+
+#welcome-hero #name {
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+#welcome-hero #welcome {
+  font-weight: lighter;
+  font-size: 3vw;
+}

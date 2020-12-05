@@ -1,7 +1,7 @@
 .post-list-item {
-  width: 80%;
+  width: 70vw;
   margin: auto;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1vw;
   display: block;
   border-bottom: 1px solid #e0e0e0;
   color: black;
@@ -12,25 +12,27 @@
 }
 
 .post-list-item .title {
-  margin: 0;
   margin-bottom: 0.5rem;
+  font-weight: normal;
+  font-size: 1.9vw;
 }
 
 .post-list-item .date {
   display: inline-block;
   color: #949494;
-  font-weight: 300;
+  font-weight: lighter;
   margin-bottom: 0.5rem;
+  font-size: 1vw;
 }
 
 .post-list-item .tag {
   display: inline-block;
   margin-right: 0.5rem;
-  padding: 0.2rem;
+  padding: 0.3rem;
   border-radius: 4px;
   background: #0077ffa6;
   color: white;
-  font-size: 1rem;
+  font-size: 1vw;
 }
 
 .post-list-item .tags {

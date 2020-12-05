@@ -1,18 +1,26 @@
-.welcome-container {
+#welcome-container {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.welcome-container #img-container {
-  margin-left: 5%;
+#welcome-container #welcome-hero {
+  max-width: 80vw;
+  height: auto;
 }
 
-.welcome-container #img-container #image {
+#welcome-container #image-container {
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-container #image-container #image {
   border-radius: 50%;
-  width: 20vw;
+  width: 18vw;
   height: auto;
 }

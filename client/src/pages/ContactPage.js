@@ -7,11 +7,11 @@ import ContactForm from "../components/ContactForm/ContactForm";
 const ContactPage = () => {
   const contactHero = {
     title: "Contact me",
-    text: "If you have any inquiries, send me an email",
+    subtitle: "If you have any inquiries, send me an email",
   };
   return (
     <div>
-      <Hero title={contactHero.title} text={contactHero.text} />
+      <Hero title={contactHero.title} subtitle={contactHero.subtitle} />
       <ContactForm />
     </div>
   );

@@ -1,7 +1,9 @@
 import React from "react";
 
+import "./SectionCaption.css";
+
 const SectionCaption = (props) => {
-  return <h1 className="text-center font-weight-light">{props.text}</h1>;
+  return <h1 className="section-caption">{props.text}</h1>;
 };
 
 export default SectionCaption;

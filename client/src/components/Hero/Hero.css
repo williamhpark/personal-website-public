@@ -1,0 +1,14 @@
+.hero {
+  text-align: center;
+  padding: 15vh 0 5vh 0;
+}
+
+.hero .title {
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+.hero .subtitle {
+  font-weight: lighter;
+  font-size: 2vw;
+}

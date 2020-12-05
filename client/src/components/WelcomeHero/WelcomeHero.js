@@ -1,15 +1,14 @@
 import React from "react";
-import { Container, Jumbotron } from "react-bootstrap";
+
+import "./WelcomeHero.css";
 
 const WelcomeHero = (props) => {
   return (
-    <Jumbotron className="bg-transparent jumbotron-fluid text-left">
-      <Container fluid={true}>
-        <h1 className="font-weight-light">Hey, I'm</h1>
-        <h3 className="display-2 font-weight-bolder">William Park</h3>
-        <h1 className="font-weight-light">Welcome to my site!</h1>
-      </Container>
-    </Jumbotron>
+    <div id="welcome-hero">
+      <h1 id="greeting">Hey, I'm</h1>
+      <h3 id="name">William Park</h3>
+      <h1 id="welcome">Welcome to my site!</h1>
+    </div>
   );
 };
 

@@ -7,12 +7,13 @@ import PostList from "../components/PostList/PostList";
 const BlogPage = (props) => {
   const blogHeroText = {
     title: "My Blog",
-    text: "Sharing my experiences in programming and other parts of my life",
+    subtitle:
+      "Sharing my experiences in programming and other parts of my life",
   };
 
   return (
     <div>
-      <Hero title={blogHeroText.title} text={blogHeroText.text} />
+      <Hero title={blogHeroText.title} subtitle={blogHeroText.subtitle} />
       <PostList />
     </div>
   );

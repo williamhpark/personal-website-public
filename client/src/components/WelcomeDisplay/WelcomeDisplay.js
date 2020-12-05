@@ -1,17 +1,21 @@
 import React from "react";
 
 import "./WelcomeDisplay.css";
-import sampleProfile from "../../img/sampleProfile.png";
+import sampleProfile from "../../assets/img/sampleProfile.png";
 import WelcomeHero from "../WelcomeHero/WelcomeHero";
 import SocialFollow from "../SocialFollow/SocialFollow";
+import ViewResume from "../ViewResume/ViewResume";
 
 const WelcomeDisplay = (props) => {
   return (
-    <div className="welcome-container">
-      <WelcomeHero />
-      <div id="img-container">
+    <div id="welcome-container">
+      <div id="welcome-hero">
+        <WelcomeHero />
+      </div>
+      <div id="image-container">
         <img id="image" src={sampleProfile} alt="William Park" />
         <SocialFollow />
+        <ViewResume />
       </div>
     </div>
   );

@@ -36,9 +36,9 @@
 
 .success-msg {
   color: #57a773;
-  padding: 10px 15px;
+  padding: 0 2vw;
 }
 .err-msg {
   color: #ee6352;
-  padding: 10px 15px;
+  padding: 0 2vw;
 }

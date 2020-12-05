@@ -1,14 +1,18 @@
 import React from "react";
 
-import VideoPlayer from "react-video-js-player";
+import "./ActivityVideo.css";
 
 const ActivityVideo = (props) => {
+  const { poster, src } = props;
   return (
-    <VideoPlayer
-      {...props}
-      className="shadow-lg"
-      hideControls={["playbackrates"]}
-    />
+    <video
+      className="activity-video shadow-lg"
+      poster={poster}
+      controls
+      controlsList="nodownload"
+    >
+      <source src={src} type="video/mp4" />
+    </video>
   );
 };
 
