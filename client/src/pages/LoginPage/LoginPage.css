@@ -1,22 +1,17 @@
-#login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+#login-page {
+  padding: 20vh 0;
 }
 
-#login-container #form {
-  margin-top: 5vh;
-  width: 30vw;
-}
-
-#login-container #msg {
-  margin-top: 3vh;
+#login-page h1 {
   text-align: center;
 }
 
-#login-container #link {
+#login-page #msg {
   margin-top: 5vh;
+  text-align: center;
+}
+
+#login-page #link {
+  margin-top: 5vh;
+  text-align: center;
 }

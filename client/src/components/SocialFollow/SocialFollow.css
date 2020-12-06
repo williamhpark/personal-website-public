@@ -3,4 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 5vw;
+  height: auto;
 }

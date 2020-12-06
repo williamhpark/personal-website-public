@@ -1,4 +1,8 @@
-#logout-btn-container {
+#create-post-page {
+  padding: 20vh 0;
+}
+
+#logout-btn {
   display: flex;
   justify-content: center;
   align-items: center;

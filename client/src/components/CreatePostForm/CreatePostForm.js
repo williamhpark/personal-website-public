@@ -6,7 +6,6 @@ import "./CreatePostForm.css";
 
 const CreatePostForm = (props) => {
   const [title, setTitle] = useState("");
-  const [createdAt, setCreatedAt] = useState(props.createdAt);
   const [tagsStr, setTagsStr] = useState("");
   const [body, setBody] = useState("");
   const [disabled, setDisabled] = useState(false);
@@ -21,9 +20,9 @@ const CreatePostForm = (props) => {
 
     const data = {
       title,
-      createdAt,
+      createdAt: props.createdAt,
       tags: getTagsArr(),
-      html: `<h1 style='font-size:300%'; margin-bottom:2rem;'>${title}</h1><h3 style='margin-bottom:4rem;'>Posted: ${createdAt}</h3><p style='font-size:125%;'>${body}</p>`,
+      html: `<h1 style='font-size:300%'; margin-bottom:2rem;'>${title}</h1><h3 style='margin-bottom:4rem;'>Posted: ${props.createdAt}</h3><p style='font-size:125%;'>${body}</p>`,
     };
     axios
       .post("http://localhost:5000/blog/", data)

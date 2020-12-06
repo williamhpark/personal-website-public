@@ -33,7 +33,7 @@ const HomePage = (props) => {
   };
 
   return (
-    <div>
+    <div id="home-page">
       <WelcomeDisplay />
       <SectionCaption text={sectionCaption.projects} />
       <Carousel />

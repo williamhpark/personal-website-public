@@ -9,6 +9,7 @@ const ActivityVideo = (props) => {
       className="activity-video shadow-lg"
       controls
       controlsList="nodownload"
+      preload="auto"
     >
       <source src={src} type="video/mp4" />
     </video>

@@ -1,6 +1,6 @@
 .post {
   min-height: 100vh;
-  margin: 0 10vw;
+  width: 80vw;
   padding: 10vw;
   background-color: white;
 }
