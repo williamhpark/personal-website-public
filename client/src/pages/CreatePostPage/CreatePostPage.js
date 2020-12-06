@@ -1,7 +1,10 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-import CreatePostForm from "../components/CreatePostForm/CreatePostForm";
-import Timestamp from "../components/Timestamp/Timestamp";
+import "./CreatePostPage.css";
+import CreatePostForm from "../../components/CreatePostForm/CreatePostForm";
+import Timestamp from "../../components/Timestamp/Timestamp";
 
 const CreatePostPage = (props) => {
   const renderDate = (dateString) => {
@@ -29,6 +32,13 @@ const CreatePostPage = (props) => {
     <div>
       <Timestamp createdAt={createdAt} />
       <CreatePostForm createdAt={createdAt} />
+      <div id="logout-btn-container">
+        <Link to="/blog">
+          <Button variant="warning" onClick={props.handleLogout}>
+            Logout
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 };

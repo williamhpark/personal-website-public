@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
 
@@ -6,15 +6,11 @@ import "./CreatePostForm.css";
 
 const CreatePostForm = (props) => {
   const [title, setTitle] = useState("");
-  const [createdAt, setCreatedAt] = useState("");
+  const [createdAt, setCreatedAt] = useState(props.createdAt);
   const [tagsStr, setTagsStr] = useState("");
   const [body, setBody] = useState("");
   const [disabled, setDisabled] = useState(false);
   const [postPublished, setPostPublished] = useState(null);
-
-  useEffect(() => {
-    setCreatedAt(props.createdAt);
-  });
 
   const getTagsArr = () => {
     return tagsStr.split(", ");

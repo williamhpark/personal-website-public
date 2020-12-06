@@ -1,8 +1,8 @@
 import React from "react";
 
-import "../App.css";
-import Hero from "../components/Hero/Hero";
-import PostList from "../components/PostList/PostList";
+import "../../App.css";
+import Hero from "../../components/Hero/Hero";
+import PostList from "../../components/PostList/PostList";
 
 const BlogPage = (props) => {
   const blogHeroText = {

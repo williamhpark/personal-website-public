@@ -1,12 +1,12 @@
 import React from "react";
 
-import "../App.css";
-import guitar from "../assets/video/guitar.mp4";
-import soccer from "../assets/video/soccer.mp4";
-import WelcomeDisplay from "../components/WelcomeDisplay/WelcomeDisplay";
-import ActivityDisplay from "../components/ActivityDisplay/ActivityDisplay";
-import SectionCaption from "../components/SectionCaption/SectionCaption";
-import Carousel from "../components/Carousel/Carousel";
+import "../../App.css";
+import guitar from "../../assets/video/guitar.mp4";
+import soccer from "../../assets/video/soccer.mp4";
+import WelcomeDisplay from "../../components/WelcomeDisplay/WelcomeDisplay";
+import ActivityDisplay from "../../components/ActivityDisplay/ActivityDisplay";
+import SectionCaption from "../../components/SectionCaption/SectionCaption";
+import Carousel from "../../components/Carousel/Carousel";
 
 const HomePage = (props) => {
   const sectionCaption = {

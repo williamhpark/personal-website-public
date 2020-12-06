@@ -1,8 +1,8 @@
 import React from "react";
 
-import "../App.css";
-import Hero from "../components/Hero/Hero";
-import ContactForm from "../components/ContactForm/ContactForm";
+import "../../App.css";
+import Hero from "../../components/Hero/Hero";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 const ContactPage = (props) => {
   const contactHero = {
