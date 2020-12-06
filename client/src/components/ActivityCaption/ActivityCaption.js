@@ -6,8 +6,8 @@ const ActivityCaption = (props) => {
   const { title, text, captionLink, captionLinkText } = props;
   return (
     <div className="activity-caption">
-      <h1 className="title">{title}</h1>
-      <h3 className="description">
+      <h1>{title}</h1>
+      <h3>
         {text}
         {captionLink !== "" ? (
           <a href={captionLink} target="_blank" rel="noopener noreferrer">

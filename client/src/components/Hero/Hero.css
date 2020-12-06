@@ -1,14 +1,14 @@
 .hero {
   text-align: center;
-  padding: 15vh 0 5vh 0;
+  padding: 15vh 0 4vh 0;
 }
 
-.hero .title {
+.hero h1 {
   font-weight: bold;
   font-size: 5vw;
 }
 
-.hero .subtitle {
+.hero h3 {
   font-weight: lighter;
   font-size: 2vw;
 }

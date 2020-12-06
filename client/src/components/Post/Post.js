@@ -1,39 +1,33 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./Post.css";
 
-class Post extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      post: {},
-    };
-  }
+const Post = (props) => {
+  const [post, setPost] = useState({});
 
-  componentDidMount() {
-    this.getPost();
-    console.log(this.props);
-  }
+  // Have to pass [] as second argument so that it only executes on the first rendering (error otherwise)
+  useEffect(() => {
+    getPost();
+  }, []);
 
-  async getPost() {
+  const getPost = async () => {
     const res = await axios.get(
-      `http://localhost:5000/blog/${this.props.match.params.id}`
+      `http://localhost:5000/blog/${props.match.params.id}`
     );
-    this.setState({ post: res.data });
-  }
+    setPost(res.data);
+  };
 
-  renderHTML() {
-    return { __html: this.state.post.html };
-  }
+  const renderHTML = () => {
+    return { __html: post.html };
+  };
 
-  renderPost() {
-    return <div dangerouslySetInnerHTML={this.renderHTML()}></div>;
-  }
+  // Render HTML in this way instead of directly in the code to avoid cross-site scripting attack
+  const renderPost = () => {
+    return <div dangerouslySetInnerHTML={renderHTML()}></div>;
+  };
 
-  render() {
-    return <div className="post shadow-lg">{this.renderPost()}</div>;
-  }
-}
+  return <div className="post shadow-lg">{renderPost()}</div>;
+};
 
 export default Post;

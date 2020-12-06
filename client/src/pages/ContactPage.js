@@ -4,7 +4,7 @@ import "../App.css";
 import Hero from "../components/Hero/Hero";
 import ContactForm from "../components/ContactForm/ContactForm";
 
-const ContactPage = () => {
+const ContactPage = (props) => {
   const contactHero = {
     title: "Contact me",
     subtitle: "If you have any inquiries, send me an email",

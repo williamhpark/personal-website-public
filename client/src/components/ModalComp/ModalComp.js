@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
+import "./ModalComp.css";
+
 const ModalComp = (props) => {
   const { title, text, link, show, onHide } = props;
   return (
@@ -10,8 +12,8 @@ const ModalComp = (props) => {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton onClick={onHide} className="text-center">
-        <Modal.Title>{title}</Modal.Title>
+      <Modal.Header closeButton onClick={onHide}>
+        <Modal.Title className="ml-auto">{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <p>{text}</p>

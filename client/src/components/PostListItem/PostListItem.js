@@ -4,6 +4,16 @@ import { Link } from "react-router-dom";
 import "./PostListItem.css";
 
 const PostListItem = (props) => {
+  const renderTags = (tags) => {
+    return tags.map((tag) => {
+      return (
+        <span className="tag" key={tag}>
+          {tag}
+        </span>
+      );
+    });
+  };
+
   const renderDate = (dateString) => {
     const monthNames = [
       "January",
@@ -19,22 +29,10 @@ const PostListItem = (props) => {
       "November",
       "December",
     ];
-
     const date = new Date(dateString);
-
     return `${
       monthNames[date.getMonth()]
     } ${date.getDate()}, ${date.getFullYear()}`;
-  };
-
-  const renderTags = (tags) => {
-    return tags.map((tag) => {
-      return (
-        <span className="tag" key={tag}>
-          {tag}
-        </span>
-      );
-    });
   };
 
   const { post } = props;

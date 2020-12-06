@@ -4,13 +4,13 @@
   margin-bottom: 2vw;
 }
 
-.activity-caption .title {
+.activity-caption h1 {
   font-weight: bold;
   text-align: center;
   font-size: 2.2vw;
 }
 
-.activity-caption .description {
+.activity-caption h3 {
   font-weight: lighter;
   text-align: left;
   font-size: 1.9vw;

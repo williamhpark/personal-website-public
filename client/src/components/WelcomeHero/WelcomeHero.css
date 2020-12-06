@@ -2,17 +2,12 @@
   text-align: left;
 }
 
-#welcome-hero #greeting {
+#welcome-hero h3 {
   font-weight: lighter;
   font-size: 3vw;
 }
 
-#welcome-hero #name {
+#welcome-hero h1 {
   font-weight: bold;
   font-size: 5vw;
-}
-
-#welcome-hero #welcome {
-  font-weight: lighter;
-  font-size: 3vw;
 }

@@ -41,6 +41,7 @@
   border: none;
   outline: none;
   transition: 0.5s;
+  color: black;
 }
 #arrow-left {
   left: 0;
@@ -52,4 +53,5 @@
 #arrow-right:hover {
   background: rgba(0, 0, 0, 0.35);
   cursor: pointer;
+  color: white;
 }

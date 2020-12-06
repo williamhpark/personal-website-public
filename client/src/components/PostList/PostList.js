@@ -1,43 +1,31 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Container from "react-bootstrap/Container";
 
+import "./PostList.css";
 import PostListItem from "../PostListItem/PostListItem";
 
-class PostList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      posts: [],
-    };
-  }
+const PostList = () => {
+  const [posts, setPosts] = useState([]);
 
-  componentDidMount() {
-    this.getPosts();
-    console.log(this.state.posts);
-  }
+  useEffect(() => {
+    getPosts();
+  });
 
-  async getPosts() {
+  const getPosts = async () => {
     const res = await axios.get("http://localhost:5000/blog/");
-    this.setState({ posts: res.data });
-  }
+    setPosts(res.data);
+  };
 
-  renderList() {
-    return this.state.posts
+  const renderList = () => {
+    return posts
       .slice(0)
       .reverse()
       .map((post) => {
         return <PostListItem post={post} key={post._id} />;
       });
-  }
+  };
 
-  render() {
-    return (
-      <div>
-        <Container fluid={true}>{this.renderList()}</Container>
-      </div>
-    );
-  }
-}
+  return <div id="post-list">{renderList()}</div>;
+};
 
 export default PostList;
