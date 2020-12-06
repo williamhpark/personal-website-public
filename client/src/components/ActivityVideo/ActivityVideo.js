@@ -3,11 +3,10 @@ import React from "react";
 import "./ActivityVideo.css";
 
 const ActivityVideo = (props) => {
-  const { poster, src } = props;
+  const { src } = props;
   return (
     <video
       className="activity-video shadow-lg"
-      poster={poster}
       controls
       controlsList="nodownload"
     >

@@ -21,7 +21,6 @@ const HomePage = (props) => {
       captionLink: "https://www.instagram.com/willpark_music/",
       captionLinkText: "@willpark_music",
       src: guitar,
-      poster: null,
     },
     soccer: {
       title: "Soccer",
@@ -30,7 +29,6 @@ const HomePage = (props) => {
       captionLink: "",
       captionLinkText: "",
       src: soccer,
-      poster: null,
     },
   };
 
@@ -46,7 +44,6 @@ const HomePage = (props) => {
         captionLink={activityInfo.guitar.captionLink}
         captionLinkText={activityInfo.guitar.captionLinkText}
         src={activityInfo.guitar.src}
-        poster={activityInfo.guitar.poster}
       />
       <ActivityDisplay
         title={activityInfo.soccer.title}
@@ -54,7 +51,6 @@ const HomePage = (props) => {
         captionLink={activityInfo.soccer.captionLink}
         captionLinkText={activityInfo.soccer.captionLinkText}
         src={activityInfo.soccer.src}
-        poster={activityInfo.soccer.poster}
       />
     </div>
   );
