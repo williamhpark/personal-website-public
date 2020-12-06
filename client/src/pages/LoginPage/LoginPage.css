@@ -12,6 +12,11 @@
   width: 30vw;
 }
 
-#link {
-  margin-top: 10vh;
+#login-container #msg {
+  margin-top: 3vh;
+  text-align: center;
+}
+
+#login-container #link {
+  margin-top: 5vh;
 }

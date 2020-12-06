@@ -23,33 +23,35 @@ const LoginPage = (props) => {
   return (
     <div id="login-container">
       <h1>Login</h1>
-      <div id="form">
-        <Form onSubmit={handleSubmit}>
-          <Form.Group>
-            <Form.Label htmlFor="password">Password</Form.Label>
-            <Form.Control
-              id="password"
-              name="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </Form.Group>
-          <Button className="d-inline-block" variant="primary" type="submit">
-            Login
-          </Button>
-          {passwordCorrect === true && (
-            <p className="d-inline success-msg font-weight-bold">
-              Login successful!
-            </p>
-          )}
-          {passwordCorrect === false && (
-            <p className="d-inline err-msg font-weight-bold">
-              Incorrect password, try again.
-            </p>
-          )}
-        </Form>
+      {!props.loggedIn && (
+        <div id="form">
+          <Form onSubmit={handleSubmit}>
+            <Form.Group>
+              <Form.Label htmlFor="password">Password</Form.Label>
+              <Form.Control
+                id="password"
+                name="password"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </Form.Group>
+            <Button className="d-inline-block" variant="primary" type="submit">
+              Login
+            </Button>
+          </Form>
+        </div>
+      )}
+      <div id="msg">
+        {passwordCorrect === true && (
+          <p className="success-msg font-weight-bold">Login successful!</p>
+        )}
+        {passwordCorrect === false && (
+          <p className="err-msg font-weight-bold">
+            Incorrect password, try again.
+          </p>
+        )}
       </div>
       {props.loggedIn && (
         <div id="link">
