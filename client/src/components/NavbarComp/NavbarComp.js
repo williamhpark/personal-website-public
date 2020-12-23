@@ -1,41 +1,44 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import "./NavbarComp.css";
 
 const NavbarComp = (props) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const expandNav = () => {
-    setExpanded(true);
-  };
-  const collapseNav = () => {
-    setExpanded(false);
-  };
-
   return (
     <Navbar
       id="navbar"
       className="border-bottom"
       expand="lg"
       fixed="top"
-      expanded={expanded}
+      expanded={props.expanded}
     >
       <Navbar.Toggle
         className="border-0"
         aria-controls="navbar-toggle"
-        onClick={() => (expanded ? collapseNav() : expandNav())}
+        onClick={() => props.setExpanded(!props.expanded)}
       />
       <Navbar.Collapse>
         <Nav className="text-center mx-auto">
-          <Link className="nav-link mx-5" to="/" onClick={collapseNav}>
+          <Link
+            className="nav-link mx-5"
+            to="/"
+            onClick={() => props.setExpanded(false)}
+          >
             HOME
           </Link>
-          <Link className="nav-link mx-5" to="/blog" onClick={collapseNav}>
+          <Link
+            className="nav-link mx-5"
+            to="/blog"
+            onClick={() => props.setExpanded(false)}
+          >
             BLOG
           </Link>
-          <Link className="nav-link mx-5" to="/contact" onClick={collapseNav}>
+          <Link
+            className="nav-link mx-5"
+            to="/contact"
+            onClick={() => props.setExpanded(false)}
+          >
             CONTACT
           </Link>
         </Nav>

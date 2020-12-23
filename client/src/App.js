@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 
@@ -16,6 +16,7 @@ import CreatePostPage from "./pages/CreatePostPage/CreatePostPage";
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleLogin = () => {
     setLoggedIn(true);
@@ -52,6 +53,20 @@ const App = () => {
     },
   ];
 
+  // Collapses the expanded navbar when the user clicks outside of it
+  let navbarRef = useRef();
+  useEffect(() => {
+    let handler = (event) => {
+      if (!navbarRef.current.contains(event.target)) {
+        setExpanded(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  }, []);
+
   const renderRoutes = () => {
     return routes.map(({ path, Component }) => {
       return (
@@ -76,7 +91,9 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <NavbarComp />
+        <div ref={navbarRef}>
+          <NavbarComp expanded={expanded} setExpanded={setExpanded} />
+        </div>
         {renderRoutes()}
         <Route
           exact
