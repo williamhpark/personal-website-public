@@ -23,7 +23,7 @@ const CreatePostForm = (props) => {
       html: `<h1 style='font-size:250%'; margin-bottom:2rem;'>${title}</h1><h3 style='margin-bottom:4rem;'>Posted: ${props.createdAt}</h3><p style='font-size:125%;'>${body}</p>`,
     };
     axios
-      .post("http://localhost:5000/blog/", data)
+      .post("/api/blog", data)
       .then((response) => {
         console.log(response);
         if (response.status === 200) {

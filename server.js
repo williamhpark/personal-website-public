@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes Config
-app.use("/blog", require("./routes/postRoutes"));
+app.use("/api/blog", require("./routes/postRoutes"));
 
 // DB Config
 console.log("Connecting to MongoDB.");
