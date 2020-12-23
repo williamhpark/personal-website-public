@@ -7,10 +7,20 @@
 
 .activity-caption h1 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .activity-caption h3 {
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .activity-caption h1 {
+    font-size: 25px;
+  }
+
+  .activity-caption h3 {
+    font-size: 20px;
+  }
 }

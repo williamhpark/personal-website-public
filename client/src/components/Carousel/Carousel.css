@@ -1,6 +1,12 @@
 .carousel-container {
-  width: 60vw;
+  width: 85vw;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    width: 50vw;
+  }
 }
 
 .carousel {

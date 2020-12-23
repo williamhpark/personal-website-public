@@ -9,9 +9,7 @@ import ViewResume from "../ViewResume/ViewResume";
 const WelcomeDisplay = (props) => {
   return (
     <div id="welcome-container">
-      <div id="welcome-hero">
-        <WelcomeHero />
-      </div>
+      <WelcomeHero />
       <div id="image-container">
         <img id="image" src={sampleProfile} alt="William Park" />
         <SocialFollow />
