@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 
-import "./App.css";
 // Components
 import NavbarComp from "./components/NavbarComp/NavbarComp";
 import Post from "./components/Post/Post";
@@ -76,7 +75,7 @@ const App = () => {
 
   return (
     <Router>
-      <div id="app">
+      <div className="app">
         <NavbarComp />
         {renderRoutes()}
         <Route

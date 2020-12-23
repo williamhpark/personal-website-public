@@ -1,8 +1,6 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
-import "./ModalComp.css";
-
 const ModalComp = (props) => {
   const { title, text, link, show, onHide } = props;
   return (

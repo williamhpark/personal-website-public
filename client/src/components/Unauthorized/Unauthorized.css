@@ -5,11 +5,6 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-}
-
-#unauthorized-container #message {
-  text-align: center;
-}
-#unauthorized-container #link {
+  padding: 0 3rem;
   text-align: center;
 }

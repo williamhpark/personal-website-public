@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "../../App.css";
 import "./LoginPage.css";
 import LoginForm from "../../components/LoginForm/LoginForm";
 
@@ -22,34 +21,28 @@ const LoginPage = (props) => {
   };
 
   return (
-    <div className="page">
-      <div id="login-page">
-        <h1>Login</h1>
-        {!props.loggedIn && (
-          <LoginForm
-            handleSubmit={handleSubmit}
-            password={password}
-            setPassword={setPassword}
-          />
-        )}
-        <div id="msg">
-          {passwordCorrect === true && (
-            <p className="success-msg font-weight-bold">Login successful!</p>
-          )}
-          {passwordCorrect === false && (
-            <p className="err-msg font-weight-bold">
-              Incorrect password, try again.
-            </p>
-          )}
+    <div id="login-page">
+      <h1>Login</h1>
+      {!props.loggedIn && (
+        <LoginForm
+          handleSubmit={handleSubmit}
+          password={password}
+          setPassword={setPassword}
+        />
+      )}
+      {passwordCorrect === true && (
+        <p className="form-msg success-msg">Login successful!</p>
+      )}
+      {passwordCorrect === false && (
+        <p className="form-msg err-msg">Incorrect password, try again.</p>
+      )}
+      {props.loggedIn && (
+        <div id="link">
+          <p>
+            <Link to="/auth/createpost">Create a new post</Link>
+          </p>
         </div>
-        {props.loggedIn && (
-          <div id="link">
-            <p>
-              <Link to="/auth/createpost">Create a new post</Link>
-            </p>
-          </div>
-        )}
-      </div>
+      )}
     </div>
   );
 };

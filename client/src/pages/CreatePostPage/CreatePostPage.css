@@ -1,10 +1,10 @@
 #create-post-page {
-  padding: 20vh 0;
+  margin: 15vh 0 10vh 0;
 }
 
-#logout-btn {
+#create-post-page #logout-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 2rem;
 }

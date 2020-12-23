@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
-import "../../App.css";
-import "./ContactForm.css";
-
 const ContactForm = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -45,7 +42,7 @@ const ContactForm = (props) => {
   };
 
   return (
-    <div id="contact-form">
+    <div className="form">
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label htmlFor="full-name">Full Name</Form.Label>
@@ -101,14 +98,14 @@ const ContactForm = (props) => {
           Send
         </Button>
         {emailSent === true && (
-          <p className="d-inline success-msg font-weight-bold">
-            Email was sent! I'll get back to you as soon as I can.
+          <p className="form-msg success-msg">
+            Email was sent successfully! I'll get back to you as soon as I can.
           </p>
         )}
         {emailSent === false && (
-          <p className="d-inline err-msg font-weight-bold">
-            Sorry, the email didn't send. Try contacting me directly at
-            william.h.park@gmail.com.
+          <p className="form-msg success-msg">
+            Sorry, the email didn't send. If this issue continues, please try
+            contacting me directly at william.h.park@gmail.com.
           </p>
         )}
       </Form>

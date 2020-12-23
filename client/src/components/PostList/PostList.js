@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import "./PostList.css";
 import PostListItem from "../PostListItem/PostListItem";
 
 const PostList = () => {
@@ -25,7 +24,7 @@ const PostList = () => {
       });
   };
 
-  return <div id="post-list">{renderList()}</div>;
+  return <div>{renderList()}</div>;
 };
 
 export default PostList;

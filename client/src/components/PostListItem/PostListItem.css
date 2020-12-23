@@ -14,7 +14,7 @@
 .post-list-item .title {
   margin-bottom: 0.5rem;
   font-weight: normal;
-  font-size: 1.7vw;
+  font-size: 20px;
 }
 
 .post-list-item .date {
@@ -22,7 +22,7 @@
   color: #949494;
   font-weight: lighter;
   margin-bottom: 0.5rem;
-  font-size: 1vw;
+  font-size: 15px;
 }
 
 .post-list-item .tag {
@@ -32,7 +32,7 @@
   border-radius: 4px;
   background: #0077ffa6;
   color: white;
-  font-size: 1vw;
+  font-size: 15px;
 }
 
 .post-list-item .tags {

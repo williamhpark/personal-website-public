@@ -27,7 +27,7 @@ const Post = (props) => {
     return <div dangerouslySetInnerHTML={renderHTML()}></div>;
   };
 
-  return <div className="post shadow-lg">{renderPost()}</div>;
+  return <div className="post shadow-sm">{renderPost()}</div>;
 };
 
 export default Post;

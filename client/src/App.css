@@ -1,11 +1,19 @@
-/* App.js */
+/* Reset */
 
-#app {
-  min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+
+.app {
   position: relative;
 }
 
-#app .page {
+.page {
+  padding: 3rem 0;
   position: absolute;
   left: 0;
   right: 0;
@@ -36,13 +44,25 @@
   transition: opacity 150ms linear;
 }
 
-/* General */
+/* Forms */
+
+.form {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+/* Success and error messages */
+
+.form-msg {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 2vw;
+  font-weight: bold;
+}
 
 .success-msg {
   color: #57a773;
-  padding: 0 2vw;
 }
 .err-msg {
   color: #ee6352;
-  padding: 0 2vw;
 }

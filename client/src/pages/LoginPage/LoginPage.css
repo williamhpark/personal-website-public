@@ -1,13 +1,8 @@
 #login-page {
-  padding: 20vh 0;
+  margin: 15vh 0 10vh 0;
 }
 
 #login-page h1 {
-  text-align: center;
-}
-
-#login-page #msg {
-  margin-top: 5vh;
   text-align: center;
 }
 

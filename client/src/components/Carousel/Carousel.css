@@ -1,17 +1,16 @@
 .carousel-container {
-  width: 100vw;
-  height: 100vh;
-  padding: 0 25vw;
+  width: 60vw;
+  margin: 0 auto;
 }
 
 .carousel {
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
   align-items: center;
   background: rgba(0, 0, 0, 0.1);
   border: none;
   overflow: hidden;
+  margin: 3rem 0 7rem 0;
 }
 
 .slide {
@@ -25,7 +24,7 @@
 
 .details-btn {
   position: absolute;
-  bottom: 1%;
+  bottom: 0.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

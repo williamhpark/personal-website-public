@@ -30,17 +30,15 @@ const CreatePostPage = (props) => {
   };
   const createdAt = renderDate(new Date());
   return (
-    <div className="page">
-      <div id="create-post-page">
-        <Timestamp createdAt={createdAt} />
-        <CreatePostForm createdAt={createdAt} />
-        <div id="logout-btn">
-          <Link to="/blog">
-            <Button variant="warning" onClick={props.handleLogout}>
-              Logout
-            </Button>
-          </Link>
-        </div>
+    <div id="create-post-page">
+      <Timestamp createdAt={createdAt} />
+      <CreatePostForm createdAt={createdAt} />
+      <div id="logout-btn">
+        <Link to="/blog">
+          <Button variant="warning" onClick={props.handleLogout}>
+            Logout
+          </Button>
+        </Link>
       </div>
     </div>
   );

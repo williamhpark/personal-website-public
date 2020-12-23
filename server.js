@@ -2,23 +2,21 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const path = require("path");
-dotenv.config({ path: path.resolve(__dirname, "./.env") });
+dotenv.config();
 
-// Setting up Express
-
+// App Config
 const app = express();
-app.use(cors());
+const PORT = process.env.PORT || 5000;
+
+// Middleware
 app.use(express.json());
+app.use(cors());
 
-// Setting up routes
-
+// Routes Config
 app.use("/blog", require("./routes/postRoutes"));
 
-// Setting up Mongoose
-
+// DB Config
 console.log("Connecting to MongoDB.");
-
 mongoose.connect(
   process.env.MONGODB_URI,
   {
@@ -33,8 +31,10 @@ mongoose.connect(
   }
 );
 
-// Serve static assets if in production
+// Listener
+app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
+// Serve static assets if in production
 if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static("client/build"));
@@ -43,7 +43,3 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
-
-const PORT = process.env.PORT || 5000;
-console.log("Starting server.");
-app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));

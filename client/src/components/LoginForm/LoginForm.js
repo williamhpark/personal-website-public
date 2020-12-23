@@ -1,11 +1,9 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 
-import "./LoginForm.css";
-
 const LoginForm = (props) => {
   return (
-    <div id="form">
+    <div className="form">
       <Form onSubmit={props.handleSubmit}>
         <Form.Group>
           <Form.Label htmlFor="password">Password</Form.Label>

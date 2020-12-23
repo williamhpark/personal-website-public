@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../../App.css";
 import guitar from "../../assets/video/guitar.mp4";
 import soccer from "../../assets/video/soccer.mp4";
 import WelcomeDisplay from "../../components/WelcomeDisplay/WelcomeDisplay";
@@ -17,23 +16,18 @@ const HomePage = (props) => {
     guitar: {
       title: "Guitar",
       text:
-        "I've been playing guitar for 6 years and worked as an instructor for 2 years. Check out my instagram page for more ",
-      captionLink: "https://www.instagram.com/willpark_music/",
-      captionLinkText: "@willpark_music",
+        "I've been playing guitar for 6 years and worked as an instructor for 2 years. Check out my instagram page for more <a href='https://www.instagram.com/willpark_music/' target='_blank' rel='noopener noreferrer'>@willpark_music</a>.",
       src: guitar,
     },
     soccer: {
       title: "Soccer",
-      text:
-        "I love playing soccer - I played MSL-level soccer for 5 years. Even though I don't play for a team anymore, I go out to the field with friends whenever I get the chance",
-      captionLink: "",
-      captionLinkText: "",
+      text: "I love playing soccer - I played MSL-level soccer for 5 years.",
       src: soccer,
     },
   };
 
   return (
-    <div id="home-page">
+    <div>
       <WelcomeDisplay />
       <SectionCaption text={sectionCaption.projects} />
       <Carousel />
@@ -41,15 +35,11 @@ const HomePage = (props) => {
       <ActivityDisplay
         title={activityInfo.guitar.title}
         text={activityInfo.guitar.text}
-        captionLink={activityInfo.guitar.captionLink}
-        captionLinkText={activityInfo.guitar.captionLinkText}
         src={activityInfo.guitar.src}
       />
       <ActivityDisplay
         title={activityInfo.soccer.title}
         text={activityInfo.soccer.text}
-        captionLink={activityInfo.soccer.captionLink}
-        captionLinkText={activityInfo.soccer.captionLinkText}
         src={activityInfo.soccer.src}
       />
     </div>

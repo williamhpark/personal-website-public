@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../../App.css";
-import "./BlogPage.css";
 import Hero from "../../components/Hero/Hero";
 import PostList from "../../components/PostList/PostList";
 
@@ -13,7 +11,7 @@ const BlogPage = (props) => {
   };
 
   return (
-    <div id="blog-page">
+    <div>
       <Hero title={blogHeroText.title} subtitle={blogHeroText.subtitle} />
       <PostList />
     </div>

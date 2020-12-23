@@ -82,7 +82,6 @@ const Carousel = (props) => {
           <Button
             className="details-btn"
             variant="info"
-            size="lg"
             onClick={() => showModal(item.id)}
           >
             Click for details

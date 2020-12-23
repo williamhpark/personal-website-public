@@ -5,15 +5,10 @@ import ActivityCaption from "../ActivityCaption/ActivityCaption";
 import ActivityVideo from "../ActivityVideo/ActivityVideo";
 
 const ActivityDisplay = (props) => {
-  const { title, text, captionLink, captionLinkText, src } = props;
+  const { title, text, src } = props;
   return (
     <div className="activity-display">
-      <ActivityCaption
-        title={title}
-        text={text}
-        captionLink={captionLink}
-        captionLinkText={captionLinkText}
-      />
+      <ActivityCaption title={title} text={text} />
       <ActivityVideo src={src} />
     </div>
   );
