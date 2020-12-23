@@ -38,9 +38,6 @@ const NavbarComp = (props) => {
           <Link className="nav-link mx-5" to="/contact" onClick={collapseNav}>
             CONTACT
           </Link>
-          <Link className="nav-link mx-5" to="/auth" onClick={collapseNav}>
-            AUTH
-          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
