@@ -6,14 +6,14 @@ import PostListItem from "../PostListItem/PostListItem";
 const PostList = () => {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    getPosts();
-  });
-
   const getPosts = async () => {
     const res = await axios.get("/api/blog");
     setPosts(res.data);
   };
+
+  useEffect(() => {
+    getPosts();
+  });
 
   const renderList = () => {
     return posts
