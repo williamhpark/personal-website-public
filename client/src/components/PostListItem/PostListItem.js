@@ -40,7 +40,9 @@ const PostListItem = (props) => {
     <Link to={`/blog/${post._id}`} className="post-list-item">
       <h3 className="title">{post.title}</h3>
       <span className="date">{renderDate(post.createdAt)}</span>
-      <div className="tags">{renderTags(post.tags)}</div>
+      {post.tags.length > 0 && (
+        <div className="tags">{renderTags(post.tags)}</div>
+      )}
     </Link>
   );
 };

@@ -9,17 +9,13 @@ const CreatePostForm = (props) => {
   const [disabled, setDisabled] = useState(false);
   const [postPublished, setPostPublished] = useState(null);
 
-  const getTagsArr = () => {
-    return tagsStr.split(", ");
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const data = {
       title,
       createdAt: props.createdAt,
-      tags: getTagsArr(),
+      tags: tagsStr ? tagsStr.split(", ") : [],
       html: `<h1 style='font-size:250%'; margin-bottom:2rem;'>${title}</h1><h3 style='margin-bottom:4rem;'>Posted: ${props.createdAt}</h3><p style='font-size:125%;'>${body}</p>`,
     };
     axios
