@@ -1,0 +1,21 @@
+.slide__title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.slide__title {
+  width: 100%;
+  background-color: #ccc0c0d2;
+  padding: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin: 0 auto;
+}
+
+.slide__image {
+  width: 100%;
+  height: auto;
+}

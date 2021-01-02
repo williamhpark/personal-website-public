@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
 const ModalComp = (props) => {
-  const { title, text, link, show, onHide } = props;
+  const { title, longDescription, link, show, onHide } = props;
   return (
     <Modal
       show={show}
@@ -14,7 +14,7 @@ const ModalComp = (props) => {
         <Modal.Title className="ml-auto">{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>{text}</p>
+        <p>{longDescription}</p>
         <a href={link} target="_blank" rel="noopener noreferrer">
           Github
         </a>
