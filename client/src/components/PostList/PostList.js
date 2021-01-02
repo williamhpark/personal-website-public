@@ -18,7 +18,9 @@ const PostList = () => {
   const renderList = () => {
     return posts
       .slice(0)
-      .reverse()
+      .sort((a, b) => {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      })
       .map((post) => {
         return <PostListItem post={post} key={post._id} />;
       });
