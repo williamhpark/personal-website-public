@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -8,6 +8,8 @@ import CreatePostForm from "../../components/CreatePostForm/CreatePostForm";
 import Timestamp from "../../components/Timestamp/Timestamp";
 
 const CreatePostPage = (props) => {
+  const [createdAt, setCreatedAt] = useState();
+
   const renderDate = (dateString) => {
     const monthNames = [
       "January",
@@ -28,7 +30,11 @@ const CreatePostPage = (props) => {
       monthNames[date.getMonth()]
     } ${date.getDate()}, ${date.getFullYear()}`;
   };
-  const createdAt = renderDate(new Date());
+
+  useEffect(() => {
+    setCreatedAt(renderDate(new Date()));
+  }, []);
+
   return (
     <div id="create-post-page">
       <Timestamp createdAt={createdAt} />
