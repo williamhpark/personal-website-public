@@ -29,7 +29,7 @@ const Carousel = (props) => {
       id: 1,
       title: "Ping-pong ball launcher",
       text:
-        "Since my family had recently gotten a new ping-pong table, I made an automatic ping-pong ball launcher using cardboard, an Arduino UNO board and some electrical supplies. Check out my blog post for more details.",
+        "An automatic ping-pong ball launcher that I use when I want to practice on my own, created using cardboard, an Arduino UNO board and some electrical supplies. Check out my blog post for more details.",
       src: arduino,
       alt: "Second slide showing an Arduino UNO",
       link: "https://github.com/williamhpark/ping_pong_launcher.git",
