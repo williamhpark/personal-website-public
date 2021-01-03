@@ -39,7 +39,7 @@ const Carousel = (props) => {
       id: 2,
       title: "Personal portfolio website",
       text:
-        "My main tool for developing application and site UIs is React. I used React to develop the UI of the site you're seeing right now, Node.js and Express to create the backend server, and MongoDB as the database. This software stack is known as the MERN stack.",
+        "My primary tool for developing application and site UIs is React. I used React to develop the UI of the site you're seeing right now, Node.js and Express to create the backend server, and MongoDB as the database. This software stack is known as the MERN stack.",
       src: mern,
       alt: "Third slide showing the MERN stack software logos",
       link: "https://github.com/williamhpark/personal-website-public.git",
