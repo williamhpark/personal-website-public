@@ -16,7 +16,7 @@ const CreatePostForm = (props) => {
       title,
       createdAt: props.createdAt,
       tags: tagsStr ? tagsStr.split(", ") : [],
-      html: `<h1 style='font-size:2.2rem;' margin-bottom:2rem;'>${title}</h1><h3 style='font-size:1.5rem;'>Posted: ${props.createdAt}</h3><hr style='margin: 2rem 0;' /><p style='font-size:1.1rem;'>${body}</p>`,
+      html: `<h1 style='font-size:2rem;'>${title}</h1><p style='font-size:1.1rem;'><b>Posted:</b> ${props.createdAt}</p><hr style='margin: 2rem 0;' /><p style='font-size:1.1rem;'>${body}</p>`,
     };
     axios
       .post("/api/blog", data)
