@@ -7,7 +7,9 @@ My personal portfolio website, to display my projects/passions and host my blog,
 ## Stack
 
 **Front-end**: React
+
 **Back-end (server)**: Node.js, Express
+
 **Database**: MongoDB
 
 Site was deployed using Heroku.
