@@ -1,5 +1,5 @@
 .activity-caption {
-  width: 60vw;
+  width: 85vw;
   height: auto;
   margin-bottom: 2rem;
   text-align: center;
@@ -16,11 +16,15 @@
 }
 
 @media (min-width: 768px) {
+  .activity-caption {
+    width: 30vw;
+  }
+
   .activity-caption h1 {
-    font-size: 25px;
+    font-size: 1.6rem;
   }
 
   .activity-caption h3 {
-    font-size: 20px;
+    font-size: 1.3rem;
   }
 }

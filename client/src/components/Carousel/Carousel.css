@@ -6,6 +6,7 @@
 @media (min-width: 768px) {
   .carousel-container {
     width: 50vw;
+    margin-bottom: 10rem;
   }
 }
 

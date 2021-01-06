@@ -37,11 +37,13 @@ const HomePage = (props) => {
         title={activityInfo.guitar.title}
         text={activityInfo.guitar.text}
         src={activityInfo.guitar.src}
+        captionFirst={true}
       />
       <ActivityDisplay
         title={activityInfo.soccer.title}
         text={activityInfo.soccer.text}
         src={activityInfo.soccer.src}
+        captionFirst={false}
       />
     </div>
   );
