@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+const connection = require("../mongoConnection");
+
 const postSchema = new mongoose.Schema({
   title: { type: String, required: true },
   createdAt: { type: Date, required: true },
@@ -7,6 +9,6 @@ const postSchema = new mongoose.Schema({
   html: { type: String, required: true },
 });
 
-const Post = mongoose.model("posts", postSchema);
+const Post = connection.model("posts", postSchema);
 
 module.exports = Post;

@@ -1,7 +1,7 @@
 import React from "react";
 
-import guitar from "../../assets/video/guitar.mp4";
-import soccer from "../../assets/video/soccer.mp4";
+import guitar from "../../assets/videos/guitar.mp4";
+import soccer from "../../assets/videos/soccer.mp4";
 import WelcomeDisplay from "../../components/WelcomeDisplay/WelcomeDisplay";
 import ActivityDisplay from "../../components/ActivityDisplay/ActivityDisplay";
 import SectionCaption from "../../components/SectionCaption/SectionCaption";

@@ -3,13 +3,6 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .carousel-container {
-    width: 50vw;
-    margin-bottom: 10rem;
-  }
-}
-
 .carousel {
   box-sizing: border-box;
   display: flex;
@@ -60,4 +53,11 @@
   background: rgba(0, 0, 0, 0.35);
   cursor: pointer;
   color: white;
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    width: 50vw;
+    margin-bottom: 10rem;
+  }
 }

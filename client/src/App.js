@@ -13,6 +13,7 @@ import BlogPage from "./pages/BlogPage/BlogPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import CreatePostPage from "./pages/CreatePostPage/CreatePostPage";
+import UploadPage from "./pages/UploadPage/UploadPage";
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -50,6 +51,11 @@ const App = () => {
       name: "Unauthorized",
       Component: Unauthorized,
       path: "/auth/unauthorized",
+    },
+    {
+      name: "Upload",
+      Component: UploadPage,
+      path: "/upload",
     },
   ];
 

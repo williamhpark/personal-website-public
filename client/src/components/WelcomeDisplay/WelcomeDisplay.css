@@ -35,3 +35,8 @@
     width: 270px;
   }
 }
+
+#welcome-container #resume {
+  font-size: 20px;
+  font-weight: lighter;
+}

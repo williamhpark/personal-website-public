@@ -6,7 +6,6 @@ import "./Post.css";
 const Post = (props) => {
   const [post, setPost] = useState({});
 
-  // Have to pass [] as second argument so that it only executes on the first rendering (error otherwise)
   useEffect(() => {
     getPost();
   }, []);

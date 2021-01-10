@@ -7,9 +7,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./Carousel.css";
-import mern from "../../assets/img/mern.jpg";
-import netflix from "../../assets/img/netflix.png";
-import arduino from "../../assets/img/arduino.jpg";
+import mern from "../../assets/images/mern.jpg";
+import netflix from "../../assets/images/netflix.jpg";
+import pingPongLauncher from "../../assets/images/pingPongLauncher.jpg";
 import Slide from "../Slide/Slide";
 import ModalComp from "../ModalComp/ModalComp";
 
@@ -29,8 +29,8 @@ const Carousel = (props) => {
       id: 1,
       title: "Ping-pong ball launcher",
       text:
-        "An automatic ping-pong ball launcher that I use when I want to practice on my own, created using cardboard, an Arduino UNO board and some electrical supplies. Check out my blog post for more details.",
-      src: arduino,
+        "This was a fun mini-project that I made over a weekend. An automatic ping-pong ball launcher that I use when I want to practice on my own, created using cardboard, an Arduino UNO board and some motors. Check out my blog post for more details.",
+      src: pingPongLauncher,
       alt: "Second slide showing an Arduino UNO",
       link: "https://github.com/williamhpark/ping_pong_launcher.git",
       modalShow: false,

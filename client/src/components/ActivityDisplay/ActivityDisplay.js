@@ -15,6 +15,7 @@ const ActivityDisplay = (props) => {
 
   return (
     <div className="activity-display">
+      {/* If captionFirst is true OR the user is in mobile view, the caption should show first. Otherwise, the video shows first */}
       {captionFirst || width < breakpoint ? (
         <>
           <div className="activity-display__caption">

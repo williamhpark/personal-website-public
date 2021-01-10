@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Post = require("../models/postModel");
 
-// @route   POST
-// #desc    Add a post to the database
+// @route POST
+// #desc  Add a post to the database
 router.post("/", async (req, res) => {
   // Retreive the data from the request
   const { title, createdAt, tags, html } = req.body;
@@ -25,15 +25,15 @@ router.post("/", async (req, res) => {
   }
 });
 
-// @route   GET
-// @desc    Retreive all posts in the database
+// @route GET
+// @desc  Retreive all posts in the database
 router.get("/", async (req, res) => {
   const posts = await Post.find();
   res.json(posts);
 });
 
-// @route   GET
-// @desc    Retreive a specific post in the database
+// @route GET
+// @desc  Retreive a specific post in the database
 router.get("/:id", async (req, res) => {
   const post = await Post.findById(req.params.id);
   res.json(post);

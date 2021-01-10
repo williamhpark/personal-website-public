@@ -1,10 +1,10 @@
 import React from "react";
 
 import "./WelcomeDisplay.css";
-import profilePic from "../../assets/img/profilePic.jpg";
+import resume from "../../assets/documents/resume_WilliamPark.pdf";
+import profilePic from "../../assets/images/profilePic.jpg";
 import WelcomeHero from "../WelcomeHero/WelcomeHero";
 import SocialFollow from "../SocialFollow/SocialFollow";
-import ViewResume from "../ViewResume/ViewResume";
 
 const WelcomeDisplay = (props) => {
   return (
@@ -13,7 +13,9 @@ const WelcomeDisplay = (props) => {
       <div id="image-container">
         <img id="image" src={profilePic} alt="William Park" />
         <SocialFollow />
-        <ViewResume />
+        <a id="resume" href={resume} download="WilliamPark_resume">
+          Download my resumé
+        </a>
       </div>
     </div>
   );
