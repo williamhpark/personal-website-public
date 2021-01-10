@@ -19,7 +19,7 @@ const Carousel = (props) => {
       id: 0,
       title: "Flicker",
       text:
-        "A Tinder-esque web app designed to make the process of choosing something to watch on Netflix with a group of people easier. Check it out at <a href='http://flickerapp.herokuapp.com/' target='_blank' rel='noopener noreferrer'>flickerapp.herokuapp.com</a>.",
+        "A Tinder-esque web app designed to make the process of deciding on something to watch on Netflix with a group of people easier. Check it out at <a href='http://flickerapp.herokuapp.com/' target='_blank' rel='noopener noreferrer'>flickerapp.herokuapp.com</a>.",
       src: netflix,
       alt: "First slide showing the Netflix logo",
       link: "https://github.com/williamhpark/movie-tinder.git",
