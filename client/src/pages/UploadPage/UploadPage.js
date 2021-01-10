@@ -25,19 +25,17 @@ const UploadPage = () => {
         return (
           <div className="upload-page__file-container">
             {file.isImage ? (
-              <>
-                <img
-                  className="upload-page__image"
-                  src={`image/${file.filename}`}
-                  alt=""
-                />
-                <form onSubmit={() => deleteFile(file._id)}>
-                  <input type="submit" name="delete" value="Delete" />
-                </form>
-              </>
+              <img
+                className="upload-page__image"
+                src={`image/${file.filename}`}
+                alt=""
+              />
             ) : (
               <p className="upload-page__non-image">{file.filename}</p>
             )}
+            <form onSubmit={() => deleteFile(file._id)}>
+              <input type="submit" name="delete" value="Delete" />
+            </form>
           </div>
         );
       });
