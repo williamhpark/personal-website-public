@@ -19,7 +19,7 @@ const Carousel = (props) => {
       id: 0,
       title: "Flicker",
       text:
-        "A Tinder-esque web app designed to make the process of choosing something to watch on Netflix with a group of people easier. Check it out at <a href='http://flickerapp.herokuapp.com/' target='_blank'>flickerapp.herokuapp.com</a>.",
+        "A Tinder-esque web app designed to make the process of choosing something to watch on Netflix with a group of people easier. Check it out at <a href='http://flickerapp.herokuapp.com/' target='_blank' rel='noopener noreferrer'>flickerapp.herokuapp.com</a>.",
       src: netflix,
       alt: "First slide showing the Netflix logo",
       link: "https://github.com/williamhpark/movie-tinder.git",
@@ -29,7 +29,7 @@ const Carousel = (props) => {
       id: 1,
       title: "Ping-pong ball launcher",
       text:
-        "This was a fun mini-project that I made over a weekend. An automatic ping-pong ball launcher that I use when I want to practice on my own, created using cardboard, an Arduino UNO board and some motors. Check out my blog post for more details.",
+        "This was a fun mini-project that I made over a weekend. An automatic ping-pong ball launcher that I use when I want to practice on my own, created using an Arduino UNO board, some cardboard and a few motors. Check out my <a href='http://williampark.site/blog/5ffad7f8e5a1773e08f9de7a' target='_blank' rel='noopener noreferrer'>blog post</a> for more details.",
       src: pingPongLauncher,
       alt: "Second slide showing an Arduino UNO",
       link: "https://github.com/williamhpark/ping_pong_launcher.git",
