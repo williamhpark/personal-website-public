@@ -159,7 +159,7 @@ app.delete("/files/:id", (req, res) => {
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
 
-/* SERVE STATIC ASSETS IF IN PRODUCTION*/
+/* SERVE STATIC ASSETS IN PRODUCTION*/
 
 if (process.env.NODE_ENV === "production") {
   // Set static folder
