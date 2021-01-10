@@ -49,6 +49,7 @@ const UploadPage = () => {
   const submit = async () => {
     history.push("/");
   };
+
   useEffect(() => {
     fetchImages();
   }, []);
