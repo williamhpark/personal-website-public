@@ -30,7 +30,7 @@ const Carousel = (props) => {
       id: 1,
       title: "Resto Bot",
       text:
-        "An automated Facebook messenger bot with natural language processing support to help groups decide on a restaurant to eat out at together. This was my group's submission for Hack the North 2020++, and we ended up placing as a finalist for the Best Use of Facebook API prize.",
+        "An automated Facebook messenger bot with natural language processing support to help groups decide on a restaurant to dine at together. This was my group's submission for Hack the North 2020++, and we ended up placing as a finalist for the Best Use of Facebook API prize.",
       src: restobot,
       alt: "Second slide showing the Resto Bot cover image",
       link: "https://github.com/williamhpark/RestoBot",
