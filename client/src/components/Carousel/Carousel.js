@@ -21,7 +21,7 @@ const Carousel = (props) => {
       id: 0,
       title: "AlgoRacer",
       text:
-        "A sorting algorithm visualizer created using React that races different sorting algorithms against each other to compare their efficiency. Check it out at <a href='https://algoracer.herokuapp.com/' target='_blank' rel='noopener noreferrer'>algoracer.herokuapp.com</a>.",
+        "A sorting algorithm visualizer created using React that races different sorting algorithms against each other to compare their efficiency. Try it out at <a href='https://algoracer.herokuapp.com/' target='_blank' rel='noopener noreferrer'>algoracer.herokuapp.com</a>.",
       src: algoracer,
       alt: "First slide showing the AlgoRacer site",
       link: "https://github.com/williamhpark/AlgoRacer",
@@ -41,7 +41,7 @@ const Carousel = (props) => {
       id: 2,
       title: "Resto Bot",
       text:
-        "An automated Facebook messenger bot with natural language processing support to help groups decide on a restaurant to dine at together. This was my group's submission for Hack the North 2020++, and we ended up placing as a finalist for the Best Use of Facebook API prize.",
+        "An automated Facebook messenger bot with natural language processing support to help groups decide on a restaurant to dine at together. This was my group's submission for Hack the North 2020++, and we ended up placing as a finalist for the Best Use of Facebook API prize. For more information, you can check out my group's submission on <a href='https://devpost.com/software/resto-bot' target='_blank' rel='noopener noreferrer'>devpost</a>.",
       src: restobot,
       alt: "Third slide showing the Resto Bot cover image",
       link: "https://github.com/williamhpark/RestoBot",
