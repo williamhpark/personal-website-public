@@ -18,7 +18,7 @@ import ModalComp from "../ModalComp/ModalComp";
 const Carousel = (props) => {
   const [items, setItems] = useState([
     {
-      id: 1,
+      id: 0,
       title: "AlgoRacer",
       text:
         "A sorting algorithm visualizer created using React that races different sorting algorithms against each other, including merge, bubble, selection, and insertion sort, to compare their efficiency. Check it out at <a href='https://algoracer.herokuapp.com/' target='_blank' rel='noopener noreferrer'>algoracer.herokuapp.com</a>.",
