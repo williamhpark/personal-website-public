@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./Carousel.css";
+import algoracer from "../../assets/images/algoracer.jpg";
 import mern from "../../assets/images/mern.jpg";
 import restobot from "../../assets/images/restobot.png";
 import netflix from "../../assets/images/netflix.jpg";
@@ -17,42 +18,52 @@ import ModalComp from "../ModalComp/ModalComp";
 const Carousel = (props) => {
   const [items, setItems] = useState([
     {
-      id: 0,
-      title: "Flicker",
+      id: 1,
+      title: "AlgoRacer",
       text:
-        "A Tinder-esque web app designed to make the process of deciding on something to watch on Netflix with a group of people easier. Check it out at <a href='https://flickerapp.herokuapp.com/' target='_blank' rel='noopener noreferrer'>flickerapp.herokuapp.com</a>.",
-      src: netflix,
+        "A sorting algorithm visualizer created using React that races different sorting algorithms against each other, including merge, bubble, selection, and insertion sort, to compare their efficiency. Check it out at <a href='https://algoracer.herokuapp.com/' target='_blank' rel='noopener noreferrer'>algoracer.herokuapp.com</a>.",
+      src: algoracer,
       alt: "First slide showing the Netflix logo",
-      link: "https://github.com/williamhpark/movie-tinder",
+      link: "https://github.com/williamhpark/AlgoRacer",
       modalShow: false,
     },
     {
       id: 1,
-      title: "Resto Bot",
+      title: "Flicker",
       text:
-        "An automated Facebook messenger bot with natural language processing support to help groups decide on a restaurant to dine at together. This was my group's submission for Hack the North 2020++, and we ended up placing as a finalist for the Best Use of Facebook API prize.",
-      src: restobot,
-      alt: "Second slide showing the Resto Bot cover image",
-      link: "https://github.com/williamhpark/RestoBot",
+        "A Tinder-esque web app designed to make the process of deciding on something to watch on Netflix with a group of people easier. Check it out at <a href='https://flickerapp.herokuapp.com/' target='_blank' rel='noopener noreferrer'>flickerapp.herokuapp.com</a>.",
+      src: netflix,
+      alt: "Second slide showing the Netflix logo",
+      link: "https://github.com/williamhpark/movie-tinder",
       modalShow: false,
     },
     {
       id: 2,
-      title: "Ping-pong ball launcher",
+      title: "Resto Bot",
       text:
-        "This was a fun mini-project that I made over a weekend. An automatic ping-pong ball launcher that I use when I want to practice on my own, created using an Arduino UNO board, some cardboard and a few motors. Check out my <a href='http://williampark.site/blog/5ffad7f8e5a1773e08f9de7a' target='_blank' rel='noopener noreferrer'>blog post</a> for more details.",
-      src: pingPongLauncher,
-      alt: "Third slide showing the automatic ping-pong ball launcher",
-      link: "https://github.com/williamhpark/ping_pong_launcher",
+        "An automated Facebook messenger bot with natural language processing support to help groups decide on a restaurant to dine at together. This was my group's submission for Hack the North 2020++, and we ended up placing as a finalist for the Best Use of Facebook API prize.",
+      src: restobot,
+      alt: "Third slide showing the Resto Bot cover image",
+      link: "https://github.com/williamhpark/RestoBot",
       modalShow: false,
     },
     {
       id: 3,
+      title: "Ping-pong ball launcher",
+      text:
+        "This was a fun mini-project that I made over a weekend. An automatic ping-pong ball launcher that I use when I want to practice on my own, created using an Arduino UNO board, some cardboard and a few motors. Check out my <a href='http://williampark.site/blog/5ffad7f8e5a1773e08f9de7a' target='_blank' rel='noopener noreferrer'>blog post</a> for more details.",
+      src: pingPongLauncher,
+      alt: "Fourth slide showing the automatic ping-pong ball launcher",
+      link: "https://github.com/williamhpark/ping_pong_launcher",
+      modalShow: false,
+    },
+    {
+      id: 4,
       title: "Personal portfolio website",
       text:
         "My primary tool for developing application and site UIs is React. I used React to develop the UI of the site you're seeing right now, Node.js and Express to create the backend server, and MongoDB as the database. This software stack is known as the MERN stack.",
       src: mern,
-      alt: "Fourth slide showing the MERN stack software logos",
+      alt: "Fifth slide showing the MERN stack software logos",
       link: "https://github.com/williamhpark/personal-website-public",
       modalShow: false,
     },
